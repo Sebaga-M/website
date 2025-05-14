@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Fit Bliss</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins:wght@600&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header class="navbar">
+    <div class="logo">
+      <img src="images/logo.png" alt="Fit Bliss Logo">
+      <span class="logo-text">Fit <span class="logo-text-part">Bliss</span></span>
+    </div>
+    <nav class="nav-links" id="navLinks">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="services.html">Services</a>
+      <a href="workouts.html">Workouts</a>
+      <a href="nutrition.html">Nutrition</a>
+      <a href="faq.html">FAQ</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+    <div class="hamburger" id="hamburger">&#9776;</div>
+  </header>
+
+  <script>
+    const hamburger = document.getElementById('hamburger');
+const navLinks = document.getElementById('navLinks');
+
+hamburger.addEventListener('click', () => {
+  navLinks.classList.toggle('active');
+});
+
+  </script>
+
+<main class="nutrition-page">
+  <section class="intro">
+    <div class="text">
+      <h1>Fuel Your Fitness Journey</h1>
+      <p>Nutrition is the cornerstone of health and performance. At FitBliss, our mission is to guide you in building sustainable, effective eating habits that support your goals and energize your life.</p>
+    </div>
+    <div class="image">
+      <img src="images/HealthyFoodP.jpg" alt="Healthy food plate"/>
+    </div>
+  </section>
+
+  <section class="macros">
+    <h2>Macronutrient Breakdown</h2>
+    <div class="macro-grid">
+      <div class="macro-card">
+        <img src="images/Calories.jpg" alt="Calories" />
+        <h3>Calories</h3>
+        <p>Your daily calorie intake determines your energy balance. We help you calculate your ideal range for your fitness goals, whether you're losing weight, maintaining, or bulking up.</p>
+      </div>
+      <div class="macro-card">
+        <img src="images/Protein.jpg" alt="Protein" />
+        <h3>Protein</h3>
+        <p>Essential for muscle repair and growth. Our plans include high-quality protein sources to aid recovery and help sculpt your body effectively.</p>
+      </div>
+      <div class="macro-card">
+        <img src="images/Carbohydrates.jpg" alt="Carbohydrates" />
+        <h3>Carbs</h3>
+        <p>Carbs are your primary energy source. We teach you how to choose the right types of carbohydrates to power your workouts and maintain stable energy levels.</p>
+      </div>
+      <div class="macro-card">
+        <img src="images/Fats.jpg" alt="Fats" />
+        <h3>Fats</h3>
+        <p>Healthy fats are crucial for hormonal balance, joint health, and sustained energy. Our plans include balanced fats from natural sources.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="nutri-services">
+    <h2>Nutrition Services</h2>
+    <div class="nutri-service-grid">
+      <div class="nutri-service-card">
+        <img src="images/Planning.jpg" alt="Meal Planning Icon">
+        <h3>Personalized Meal Planning</h3>
+        <p>Get custom meal plans tailored to your fitness goals, preferences, and dietary needs.</p>
+      </div>
+      <div class="nutri-service-card">
+        <img src="images/Grocery.jpg" alt="Grocery Icon">
+        <h3>Grocery Shopping Tutorials</h3>
+        <p>Learn how to shop smart with practical grocery lists and nutrition label decoding tips.</p>
+      </div>
+      <div class="nutri-service-card">
+        <img src="images/Cooking.jpg" alt="Cooking Icon">
+        <h3>Cooking Demonstrations</h3>
+        <p>Master healthy recipes and meal prep techniques through step-by-step video or live demos.</p>
+      </div>
+      <div class="nutri-service-card">
+        <img src="images/Counseling.jpg" alt="Counseling Icon">
+        <h3>One-on-One Counseling</h3>
+        <p>Work directly with our experts to build sustainable habits and overcome food challenges.</p>
+      </div>
+    </div>
+  </section>
+  
+
+  <section class="tips">
+    <h2>Healthy Eating Tips</h2>
+    <div class="tips-grid">
+      <div class="tip-card">
+        <img src="images/EWF.jpg" alt="Whole Foods Icon">
+        <h3>1. Eat Whole Foods</h3>
+        <p>Focus on minimally processed foods like vegetables, lean proteins, fruits, legumes, and healthy fats.</p>
+      </div>
+      <div class="tip-card">
+        <img src="images/Hydration.jpg" alt="Hydration Icon">
+        <h3>2. Hydrate Often</h3>
+        <p>Water plays a vital role in digestion, energy, and performance. Aim for at least 2–3 liters a day.</p>
+      </div>
+      <div class="tip-card">
+        <img src="images/Meal-Prep.jpg" alt="Meal Prep Icon">
+        <h3>3. Plan Ahead</h3>
+        <p>Meal prepping helps you avoid poor choices when you're busy or hungry.</p>
+      </div>
+      <div class="tip-card">
+        <img src="images/Balanced.jpg" alt="Balanced Plate Icon">
+        <h3>4. Balance Your Plate</h3>
+        <p>Every meal should have protein, healthy fat, and fiber-rich carbs to keep you full and energized.</p>
+      </div>
+    </div>
+  </section>
+  
+
+</main>
+<footer class="footer">
+  <div class="footer-container">
+    <div class="footer-logo">
+      <h2>FIT <span>BLISS</span></h2>
+      <p>WORKOUT COMPLETE™</p>
+    </div>
+
+    <div class="footer-links">
+      <div class="footer-column">
+        <h4>WORKOUTS</h4>
+        <a href="#">Workout Videos</a>
+        <a href="#">Custom Workouts</a>
+        <h4>PROGRAMS</h4>
+        <a href="#">Workout Programs</a>
+        <a href="#">Meal Plans</a>
+        <a href="#">Pilot Programs</a>
+        <a href="#">Routines</a>
+      </div>
+
+      <div class="footer-column">
+        <h4>HEALTHY LIVING</h4>
+        <a href="#">Fitness</a>
+        <a href="#">Health</a>
+        <a href="#">Nutrition</a>
+        <a href="#">Healthy Recipes</a>
+        <a href="#">Experts</a>
+      </div>
+
+      <div class="footer-column">
+        <h4>ABOUT</h4>
+        <a href="#">Careers</a>
+        <a href="#">Tutorials</a>
+        <a href="#">Our Team</a>
+        <a href="#">B2B Options</a>
+      </div>
+
+      <div class="footer-column">
+        <h4>MEMBERSHIP</h4>
+        <a href="#">FB Plus</a>
+        <a href="#">Community</a>
+        <a href="#">Referral Program</a>
+        <a href="#">Blog</a>
+        <a href="#">Contact Us</a>
+        <a href="#">FAQ</a>
+        <a href="#">Store</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="footer-bottom">
+    <p>&copy; 2025 Fitness Blender. All rights reserved. <a href="#">Terms of Use</a> | <a href="#">Privacy Policy</a></p>
+    <div class="footer-socials">
+      <a href="#"><img src="youtube-icon.svg" alt="YouTube"></a>
+      <a href="#"><img src="pinterest-icon.svg" alt="Pinterest"></a>
+      <a href="#"><img src="facebook-icon.svg" alt="Facebook"></a>
+      <a href="#"><img src="instagram-icon.svg" alt="Instagram"></a>
+      <a href="#"><img src="twitter-icon.svg" alt="Twitter"></a>
+    </div>
+  </div>
+</footer>
+</body>
+</html>

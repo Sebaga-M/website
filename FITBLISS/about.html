@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Fit Bliss</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins:wght@600&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header class="navbar">
+    <div class="logo">
+      <img src="images/logo.png" alt="Fit Bliss Logo">
+      <span class="logo-text">Fit <span class="logo-text-part">Bliss</span></span>
+    </div>
+    <nav class="nav-links" id="navLinks">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="services.html">Services</a>
+      <a href="workouts.html">Workouts</a>
+      <a href="nutrition.html">Nutrition</a>
+      <a href="faq.html">FAQ</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+    <div class="hamburger" id="hamburger">&#9776;</div>
+  </header>
+
+  <script>
+    const hamburger = document.getElementById('hamburger');
+const navLinks = document.getElementById('navLinks');
+
+hamburger.addEventListener('click', () => {
+  navLinks.classList.toggle('active');
+});
+
+  </script>
+
+<main class="about-page">
+
+  <section class="hero-section">
+    <div class="hero-text">
+      <h1>About FitBliss</h1>
+      <p>Find Your Fitness, Find Your Bliss.</p>
+    </div>
+    <div class="hero-image">
+      <img src="images/about-hero.jpg" alt="Group fitness class">
+    </div>
+  </section>
+
+  <section class="mission-section">
+    <h2>Your Fitness Partner</h2>
+    <p>FitBliss is more than just a gym — it's your comprehensive partner in achieving your fitness aspirations. We offer a holistic approach to health, combining cutting-edge workout programs with expert nutritional support to help you reach your full potential.</p>
+  </section>
+
+  <section class="goals-section">
+    <h2>Our Goals</h2>
+    <div class="goal-cards">
+      <div class="goal-card">
+        <img src="images/sustainable.jpg" alt="Healthy lifestyle">
+        <h3>Inspire Sustainable Change</h3>
+        <p>Help members establish healthy habits that last a lifetime, not just quick fixes or temporary transformations.</p>
+      </div>
+      <div class="goal-card">
+        <img src="images/commu.jpg" alt="Diverse fitness group">
+        <h3>Foster Inclusive Community</h3>
+        <p>Create a diverse fitness family where people of all ages, backgrounds, and fitness levels feel they truly belong.</p>
+      </div>
+      <div class="goal-card">
+        <img src="images/excellence.jpg" alt="Trainer with clients">
+        <h3>Deliver Excellence</h3>
+        <p>Provide world-class instruction, facilities, and programming that exceed industry standards and member expectations.</p>
+      </div>
+      <div class="goal-card">
+        <img src="images/education.jpg" alt="Nutrition and fitness coaching">
+        <h3>Educate & Empower</h3>
+        <p>Equip our members with knowledge about fitness, nutrition, and recovery so they can make informed decisions about their health.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="team-section">
+    <h2>Our Team</h2>
+    <p>Our dedicated team of certified trainers and nutrition specialists are committed to providing you with the knowledge, tools, and motivation you need to succeed. At FitBliss, we’re passionate about empowering you to build a strong body, a healthy mind, and a balanced lifestyle.</p>
+    <img src="images/team.jpg" alt="FitBliss team" class="team-photo">
+  </section>
+
+</main>
+<footer class="footer">
+  <div class="footer-container">
+    <div class="footer-logo">
+      <h2>FIT <span>BLISS</span></h2>
+      <p>WORKOUT COMPLETE™</p>
+    </div>
+
+    <div class="footer-links">
+      <div class="footer-column">
+        <h4>WORKOUTS</h4>
+        <a href="#">Workout Videos</a>
+        <a href="#">Custom Workouts</a>
+        <h4>PROGRAMS</h4>
+        <a href="#">Workout Programs</a>
+        <a href="#">Meal Plans</a>
+        <a href="#">Pilot Programs</a>
+        <a href="#">Routines</a>
+      </div>
+
+      <div class="footer-column">
+        <h4>HEALTHY LIVING</h4>
+        <a href="#">Fitness</a>
+        <a href="#">Health</a>
+        <a href="#">Nutrition</a>
+        <a href="#">Healthy Recipes</a>
+        <a href="#">Experts</a>
+      </div>
+
+      <div class="footer-column">
+        <h4>ABOUT</h4>
+        <a href="#">Careers</a>
+        <a href="#">Tutorials</a>
+        <a href="#">Our Team</a>
+        <a href="#">B2B Options</a>
+      </div>
+
+      <div class="footer-column">
+        <h4>MEMBERSHIP</h4>
+        <a href="#">FB Plus</a>
+        <a href="#">Community</a>
+        <a href="#">Referral Program</a>
+        <a href="#">Blog</a>
+        <a href="#">Contact Us</a>
+        <a href="#">FAQ</a>
+        <a href="#">Store</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="footer-bottom">
+    <p>&copy; 2025 Fitness Blender. All rights reserved. <a href="#">Terms of Use</a> | <a href="#">Privacy Policy</a></p>
+    <div class="footer-socials">
+      <a href="#"><img src="youtube-icon.svg" alt="YouTube"></a>
+      <a href="#"><img src="pinterest-icon.svg" alt="Pinterest"></a>
+      <a href="#"><img src="facebook-icon.svg" alt="Facebook"></a>
+      <a href="#"><img src="instagram-icon.svg" alt="Instagram"></a>
+      <a href="#"><img src="twitter-icon.svg" alt="Twitter"></a>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>

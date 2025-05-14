@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Fit Bliss</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins:wght@600&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header class="navbar">
+    <div class="logo">
+      <img src="images/logo.png" alt="Fit Bliss Logo">
+      <span class="logo-text">Fit <span class="logo-text-part">Bliss</span></span>
+    </div>
+    <nav class="nav-links" id="navLinks">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="services.html">Services</a>
+      <a href="workouts.html">Workouts</a>
+      <a href="nutrition.html">Nutrition</a>
+      <a href="faq.html">FAQ</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+    <div class="hamburger" id="hamburger">&#9776;</div>
+  </header>
+
+  <script>
+    const hamburger = document.getElementById('hamburger');
+const navLinks = document.getElementById('navLinks');
+
+hamburger.addEventListener('click', () => {
+  navLinks.classList.toggle('active');
+});
+
+
+  </script>
+
+  <main>
+  
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="hero-content">
+      <h1>Feel Great. Body and Mind.</h1>
+      <p>Personalized workouts, healthy recipes, and expert guidance to help you thrive.</p>
+      <a href="join.html" class="btn">Join Now</a>
+    </div>
+  </section>
+  <!-- Features Section -->
+   <section class="Features">
+    <article class="feature-card">
+        <h2>Trainer Series</h2>
+        <p>Exercise with your favorite trainer in our new Trainer Series programs designed to push your limits.</p>
+        <a href="services.html#trainer" class="ft-btn">Learn more</a>
+        <img src="images/trainers.png" alt="Trainer Series">
+    </article>
+    
+    <article class="feature-card">
+        <h2>Yoga & Wellness</h2>
+        <p>Relax, unwind, and build strength with our yoga and mindfulness sessions for all levels.</p>
+        <a href="services.html#yoga" class="ft-btn">Learn more</a>
+        <img src="images/yoga.png" alt="Yoga and Wellness">
+    </article>
+    
+    <article class="feature-card">
+        <h2>HIIT Workouts</h2>
+        <p>Boost your metabolism and burn calories fast with our high-intensity interval training programs.</p>
+        <a href="services.html#HIIT" class="ft-btn">Learn more</a>
+        <img src="images/hiit.png" alt="HIIT Workouts">
+    </article>
+    
+    <article class="feature-card">
+        <h2>Strength Training</h2>
+        <p>Build muscle and gain strength with professional programs using weights and resistance tools.</p>
+        <a href="services.html#strength" class="ft-btn">Learn more</a>
+        <img src="images/strength.png" alt="Strength Training">
+    </article>
+    
+    <article class="feature-card">
+        <h2>Nutrition Plans</h2>
+        <p>Fuel your body the right way with our customized meal plans and nutrition advice from experts.</p>
+        <a href="services.html#nutrition" class="ft-btn">Learn more</a>
+        <img src="images/nutrition.jpg" alt="Nutrition Plans">
+    </article>
+    
+    <article class="feature-card">
+        <h2>Virtual Classes</h2>
+        <p>Work out from anywhere with live and on-demand fitness classes led by top instructors.</p>
+        <a href="services.html#classes" class="ft-btn">Learn more</a>
+        <img src="images/virtual.png" alt="Virtual Classes">
+    </article>
+    
+   </section>
+
+   <section class="programs-section">
+    <h2>Not sure where to start?</h2>
+    <p>Programs offer day-to-day guidance on an interactive calendar to keep you on track.</p>
+  
+    <div class="programs-grid">
+      <!-- Program Card 1 -->
+      <div class="program-card">
+        <img src="images/program1.png" alt="Free 2 Week Challenge">
+        <h3>Fitness Bliss Free 2 Week Challenge</h3>
+        <p>Strength Training, Cardio, and Mobility Workouts for a Strong Body and Mind</p>
+        <span class="duration">31 Min/Day · 2 Weeks</span>
+        <span class="price free">Free</span>
+      </div>
+  
+      <!-- Program Card 2 -->
+      <div class="program-card">
+        <img src="images/program2.png" alt="Essentials with Pearl">
+        <h3>Essentials with Pearl</h3>
+        <p>Beginner-Friendly Total Body Strength Training</p>
+        <span class="duration">35 Min/Day · 1 Week</span>
+        <span class="price">$5.99</span>
+      </div>
+  
+      <!-- Program Card 3 -->
+      <div class="program-card">
+        <img src="images/program3.png" alt="Level Up with John">
+        <h3>Level Up with John</h3>
+        <p>Advanced Strength Workouts for Muscle Growth</p>
+        <span class="duration">42 Min/Day · 1 Week</span>
+        <span class="price">$8.99</span>
+      </div>
+  
+      <!-- Program Card 4 -->
+      <div class="program-card">
+        <img src="images/program4.png" alt="FB Fit Round 4">
+        <h3>FB Fit Round 4</h3>
+        <p>Lengthy, Intense HIIT and Mobility Sessions</p>
+        <span class="duration">48 Min/Day · 4 Weeks</span>
+        <span class="price">$17.99</span>
+      </div>
+    </div>
+  </section>
+  
+  </main>
+  <footer class="footer">
+    <div class="footer-container">
+      <div class="footer-logo">
+        <h2>FIT <span>BLISS</span></h2>
+        <p>WORKOUT COMPLETE™</p>
+      </div>
+  
+      <div class="footer-links">
+        <div class="footer-column">
+          <h4>WORKOUTS</h4>
+          <a href="#">Workout Videos</a>
+          <a href="#">Custom Workouts</a>
+          <h4>PROGRAMS</h4>
+          <a href="#">Workout Programs</a>
+          <a href="#">Meal Plans</a>
+          <a href="#">Pilot Programs</a>
+          <a href="#">Routines</a>
+        </div>
+  
+        <div class="footer-column">
+          <h4>HEALTHY LIVING</h4>
+          <a href="#">Fitness</a>
+          <a href="#">Health</a>
+          <a href="#">Nutrition</a>
+          <a href="#">Healthy Recipes</a>
+          <a href="#">Experts</a>
+        </div>
+  
+        <div class="footer-column">
+          <h4>ABOUT</h4>
+          <a href="#">Careers</a>
+          <a href="#">Tutorials</a>
+          <a href="#">Our Team</a>
+          <a href="#">B2B Options</a>
+        </div>
+  
+        <div class="footer-column">
+          <h4>MEMBERSHIP</h4>
+          <a href="#">FB Plus</a>
+          <a href="#">Community</a>
+          <a href="#">Referral Program</a>
+          <a href="#">Blog</a>
+          <a href="#">Contact Us</a>
+          <a href="#">FAQ</a>
+          <a href="#">Store</a>
+        </div>
+      </div>
+    </div>
+  
+    <div class="footer-bottom">
+      <p>&copy; 2025 Fitness Blender. All rights reserved. <a href="#">Terms of Use</a> | <a href="#">Privacy Policy</a></p>
+      <div class="footer-socials">
+        <a href="#"><img src="youtube-icon.svg" alt="YouTube"></a>
+        <a href="#"><img src="pinterest-icon.svg" alt="Pinterest"></a>
+        <a href="#"><img src="facebook-icon.svg" alt="Facebook"></a>
+        <a href="#"><img src="instagram-icon.svg" alt="Instagram"></a>
+        <a href="#"><img src="twitter-icon.svg" alt="Twitter"></a>
+      </div>
+    </div>
+  </footer>
+  
+</body>
+</html>

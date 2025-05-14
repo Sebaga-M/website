@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Fit Bliss</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins:wght@600&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header class="navbar">
+    <div class="logo">
+      <img src="images/logo.png" alt="Fit Bliss Logo">
+      <span class="logo-text">Fit <span class="logo-text-part">Bliss</span></span>
+    </div>
+    <nav class="nav-links" id="navLinks">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="services.html">Services</a>
+      <a href="workouts.html">Workouts</a>
+      <a href="nutrition.html">Nutrition</a>
+      <a href="faq.html">FAQ</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+    <div class="hamburger" id="hamburger">&#9776;</div>
+  </header>
+
+  <script>
+    const hamburger = document.getElementById('hamburger');
+const navLinks = document.getElementById('navLinks');
+
+hamburger.addEventListener('click', () => {
+  navLinks.classList.toggle('active');
+});
+
+  </script>
+
+  <main>
+    <section class="faq-section">
+      <h2>Frequently Asked Questions</h2>
+    
+      <div class="faq-item">
+        <button class="faq-question">What are your membership options?</button>
+        <div class="faq-answer">
+          <p>We offer monthly, quarterly, and yearly membership plans with flexible upgrade options. Each plan includes full access to the gym, group classes, and virtual coaching.</p>
+        </div>
+      </div>
+    
+      <div class="faq-item">
+        <button class="faq-question">Do you provide nutrition plans?</button>
+        <div class="faq-answer">
+          <p>Yes! Our certified nutritionists create custom meal plans based on your goals, dietary preferences, and fitness level.</p>
+        </div>
+      </div>
+    
+      <div class="faq-item">
+        <button class="faq-question">Are the trainers certified?</button>
+        <div class="faq-answer">
+          <p>All our personal trainers are nationally certified and have years of experience in guiding clients toward their fitness goals.</p>
+        </div>
+      </div>
+    
+      <div class="faq-item">
+        <button class="faq-question">Can I try a session before joining?</button>
+        <div class="faq-answer">
+          <p>Absolutely! You can book a free trial session with one of our trainers to experience our facility and programs firsthand.</p>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-question">What payment methods do you accept?</button>
+        <div class="faq-answer">
+          <p>We accept Visa, MasterCard, PayPal, mobile payments, and cash at our front desk. You can also set up auto-pay for convenience.</p>
+        </div>
+      </div>
+      
+      <div class="faq-item">
+        <button class="faq-question">Is the gym open 24/7?</button>
+        <div class="faq-answer">
+          <p>Yes! Our facility is open 24/7 for members. Staffed hours are Monday–Saturday, 6am–10pm.</p>
+        </div>
+      </div>
+      
+      <div class="faq-item">
+        <button class="faq-question">Do you offer online coaching?</button>
+        <div class="faq-answer">
+          <p>Yes, we provide virtual personal training and nutrition coaching via Zoom, including weekly check-ins and workout tracking.</p>
+        </div>
+      </div>
+      
+      <div class="faq-item">
+        <button class="faq-question">Is there a cancellation fee?</button>
+        <div class="faq-answer">
+          <p>No cancellation fees! You can cancel anytime with at least 7 days' notice before your next billing cycle.</p>
+        </div>
+      </div>
+      
+      <div class="faq-item">
+        <button class="faq-question">Are showers and lockers available?</button>
+        <div class="faq-answer">
+          <p>Yes. We provide clean showers, towel service, and personal lockers. Just bring your own lock or rent one from the front desk.</p>
+        </div>
+      </div>
+      
+      <div class="faq-item">
+        <button class="faq-question">What should I bring for my first session?</button>
+        <div class="faq-answer">
+          <p>Comfortable gym attire, water bottle, and a towel. We'll handle the rest, including a free fitness assessment!</p>
+        </div>
+      </div>
+      
+      <div class="faq-item">
+        <button class="faq-question">Is personal training included in the membership?</button>
+        <div class="faq-answer">
+          <p>Group classes are included, but 1-on-1 personal training is an add-on service. Ask about our discounted training packages!</p>
+        </div>
+      </div>
+      
+      <div class="faq-item">
+        <button class="faq-question">What COVID-19 safety measures do you follow?</button>
+        <div class="faq-answer">
+          <p>We sanitize all equipment regularly, provide hand sanitizer stations, and maintain air filtration standards. Masks are optional but recommended during peak hours.</p>
+        </div>
+      </div>
+      
+    </section>
+    
+  </main>
+  <script>
+    const faqs = document.querySelectorAll('.faq-question');
+  
+    faqs.forEach(button => {
+      button.addEventListener('click', () => {
+        const answer = button.nextElementSibling;
+        answer.style.display = answer.style.display === 'block' ? 'none' : 'block';
+      });
+    });
+  </script>
+  
+  <footer class="footer">
+    <div class="footer-container">
+      <div class="footer-logo">
+        <h2>FIT <span>BLISS</span></h2>
+        <p>WORKOUT COMPLETE™</p>
+      </div>
+  
+      <div class="footer-links">
+        <div class="footer-column">
+          <h4>WORKOUTS</h4>
+          <a href="#">Workout Videos</a>
+          <a href="#">Custom Workouts</a>
+          <h4>PROGRAMS</h4>
+          <a href="#">Workout Programs</a>
+          <a href="#">Meal Plans</a>
+          <a href="#">Pilot Programs</a>
+          <a href="#">Routines</a>
+        </div>
+  
+        <div class="footer-column">
+          <h4>HEALTHY LIVING</h4>
+          <a href="#">Fitness</a>
+          <a href="#">Health</a>
+          <a href="#">Nutrition</a>
+          <a href="#">Healthy Recipes</a>
+          <a href="#">Experts</a>
+        </div>
+  
+        <div class="footer-column">
+          <h4>ABOUT</h4>
+          <a href="#">Careers</a>
+          <a href="#">Tutorials</a>
+          <a href="#">Our Team</a>
+          <a href="#">B2B Options</a>
+        </div>
+  
+        <div class="footer-column">
+          <h4>MEMBERSHIP</h4>
+          <a href="#">FB Plus</a>
+          <a href="#">Community</a>
+          <a href="#">Referral Program</a>
+          <a href="#">Blog</a>
+          <a href="#">Contact Us</a>
+          <a href="#">FAQ</a>
+          <a href="#">Store</a>
+        </div>
+      </div>
+    </div>
+  
+    <div class="footer-bottom">
+      <p>&copy; 2025 Fitness Blender. All rights reserved. <a href="#">Terms of Use</a> | <a href="#">Privacy Policy</a></p>
+      <div class="footer-socials">
+        <a href="#"><img src="youtube-icon.svg" alt="YouTube"></a>
+        <a href="#"><img src="pinterest-icon.svg" alt="Pinterest"></a>
+        <a href="#"><img src="facebook-icon.svg" alt="Facebook"></a>
+        <a href="#"><img src="instagram-icon.svg" alt="Instagram"></a>
+        <a href="#"><img src="twitter-icon.svg" alt="Twitter"></a>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>

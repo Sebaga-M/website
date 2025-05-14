@@ -1,0 +1,505 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Fit Bliss</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins:wght@600&display=swap" rel="stylesheet">
+  
+</head>
+<body>
+  <header class="navbar">
+    <div class="logo">
+      <img src="images/logo.png" alt="Fit Bliss Logo">
+      <span class="logo-text">Fit <span class="logo-text-part">Bliss</span></span>
+    </div>
+    <nav class="nav-links" id="navLinks">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="services.html">Services</a>
+      <a href="workouts.html">Workouts</a>
+      <a href="nutrition.html">Nutrition</a>
+      <a href="faq.html">FAQ</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+    <div class="hamburger" id="hamburger">&#9776;</div>
+  </header>
+
+  <script>
+    const hamburger = document.getElementById('hamburger');
+const navLinks = document.getElementById('navLinks');
+
+hamburger.addEventListener('click', () => {
+  navLinks.classList.toggle('active');
+});
+
+  </script>
+
+<main class="workouts">
+  <section class="intro">
+    <h1>FIT <span class="logo-text-part">BLISS</span> Workouts</h1>
+    <p>
+      At FitBliss, we believe that movement is medicine. Our programs are tailored for every level—whether you're a beginner or seasoned athlete. Explore a diverse range of classes designed to help you build strength, boost endurance, and transform your lifestyle.
+    </p>
+    
+  </section>
+
+  <section class="workout-category">
+    <article>
+      <img src="images/ST2.jpg" alt="Strength Training">
+      <div>
+        <h2>Strength Training</h2>
+        <p>Build lean muscle and functional strength with weight-based programs using free weights, resistance bands, and machines. Perfect for increasing metabolism and overall strength.</p>
+      </div>
+    </article>
+
+    <article>
+      <img src="images/cardio.jpg" alt="Cardio and Endurance">
+      <div>
+        <h2>Cardio & Endurance</h2>
+        <p>Boost heart health and burn calories with high-energy sessions including treadmill runs, aerobic circuits, and cycling.</p>
+      </div>
+    </article>
+
+    <article>
+      <img src="images/hiit.jpg" alt="HIIT Training">
+      <div>
+        <h2>HIIT</h2>
+        <p>Short bursts of intense workouts that burn fat, improve stamina, and leave your metabolism elevated long after class ends.</p>
+      </div>
+    </article>
+
+    <article>
+      <img src="images/functional.jpg" alt="Functional Fitness">
+      <div>
+        <h2>Functional Fitness</h2>
+        <p>Train your body to handle real-life activities more efficiently through compound movements, agility work, and core strength.</p>
+      </div>
+    </article>
+
+    <article>
+      <img src="images/mobility.jpg" alt="Mobility and Recovery">
+      <div>
+        <h2>Mobility & Recovery</h2>
+        <p>Improve flexibility and reduce injury risk with recovery classes that include yoga-inspired stretches and foam rolling techniques.</p>
+      </div>
+    </article>
+
+    <article>
+      <img src="images/group-class.jpg" alt="Group Classes">
+      <div>
+        <h2>Group Classes</h2>
+        <p>Fun, high-energy group sessions including bootcamps, circuits, and dance workouts that motivate and inspire through community.</p>
+      </div>
+    </article>
+
+    <article>
+      <img src="images/personal-trainer.jpg" alt="Personal Training">
+      <div>
+        <h2>Personalized Training</h2>
+        <p>One-on-one coaching to target your specific goals—be it strength, recovery, weight loss, or sports performance.</p>
+      </div>
+    </article>
+  </section>
+
+  <section class="filters">
+    <h2>Available Workouts</h2>
+    <div class="filter-controls">
+        <select id="categoryFilter">
+            <option value="all">All Categories</option>
+            <option value="chest">Chest</option>
+            <option value="legs">Legs</option>
+            <option value="arms">Arms</option>
+            <option value="core">Core</option>
+            <option value="fullbody">Full Body</option>
+        </select>
+
+        <select id="levelFilter">
+            <option value="all">All Levels</option>
+            <option value="beginner">Beginner</option>
+            <option value="intermediate">Intermediate</option>
+            <option value="advanced">Advanced</option>
+        </select>
+    </div>
+</section>
+<section class="workout-list">
+  <!-- Chest Workouts -->
+  <article class="workout-card" data-category="chest" data-level="beginner">
+    <h2>Chest Workouts Beginner</h2>
+    <h3>Push-ups</h3>
+    <p>3×8–12 reps (2 mins)</p>
+    <h3>Dumbbell Bench Press</h3>
+    <p>3×8–12 reps (3 mins)</p>
+    <h3>Dumbbell Flyes</h3>
+    <p>3×10–15 reps (3 mins)</p>
+    <h3>Incline Dumbbell Press</h3>
+    <p>3×8–12 reps (3 mins)</p>
+    <h3>Wall Push-ups</h3>
+    <p>2×15 reps (2 mins)</p>
+    <h3>Standing Chest Squeezes</h3>
+    <p>2×15 reps (2 mins)</p>
+    <h3>Chest Press Machine</h3>
+    <p>3×8–12 reps (3 mins)</p>
+    <h3>Incline Chest Press Machine</h3>
+    <p>3×8 reps (3 mins)</p>
+    <h3>Push-ups on Knees</h3>
+    <p>2×10 reps (2 mins)</p>
+    <h3>Chest Dips (assisted)</h3>
+    <p>3×5 reps (3 mins)</p>
+  </article>
+
+  <article class="workout-card" data-category="chest" data-level="intermediate">
+    <h2>Chest Workouts Intermediate</h2>
+    <h3>Barbell Bench Press</h3>
+    <p>4×6–10 reps (4 mins)</p>
+    <h3>Incline Bench Press</h3>
+    <p>4×8 reps (4 mins)</p>
+    <h3>Chest Dips</h3>
+    <p>3×8–10 reps (3 mins)</p>
+    <h3>Pec Deck Machine</h3>
+    <p>3×10–12 reps (3 mins)</p>
+    <h3>Decline Dumbbell Press</h3>
+    <p>3×8 reps (3 mins)</p>
+    <h3>Cable Crossovers</h3>
+    <p>3×12 reps (3 mins)</p>
+    <h3>Incline Dumbbell Flyes</h3>
+    <p>3×10 reps (3 mins)</p>
+    <h3>Machine Chest Press</h3>
+    <p>3×8 reps (3 mins)</p>
+    <h3>Push-ups with Clap</h3>
+    <p>3×8 reps (3 mins)</p>
+    <h3>Chest Flyes with Cables</h3>
+    <p>3×12 reps (3 mins)</p>
+  </article>
+
+  <article class="workout-card" data-category="chest" data-level="advanced">
+    <h2>Chest Workouts Advanced</h2>
+    <h3>Barbell Bench Press (heavy)</h3>
+    <p>5×5 reps (5 mins)</p>
+    <h3>Incline Dumbbell Press</h3>
+    <p>4×8 reps (4 mins)</p>
+    <h3>Weighted Dips</h3>
+    <p>3×8 reps (3 mins)</p>
+    <h3>Cable Crossovers (slow tempo)</h3>
+    <p>4×12–15 reps (4 mins)</p>
+    <h3>Push-up Drop Sets</h3>
+    <p>3 sets (4 mins)</p>
+    <h3>Incline Chest Flyes</h3>
+    <p>3×12 reps (3 mins)</p>
+    <h3>Barbell Chest Press Superset</h3>
+    <p>4×6 reps (4 mins)</p>
+    <h3>Explosive Push-ups</h3>
+    <p>3×8 reps (3 mins)</p>
+    <h3>Pec Deck + Chest Press Combo</h3>
+    <p>3 sets (4 mins)</p>
+    <h3>Decline Barbell Bench Press</h3>
+    <p>4×8 reps (4 mins)</p>
+  </article>
+
+  <!-- Legs Workouts -->
+  <article class="workout-card" data-category="legs" data-level="beginner">
+    <h2>Legs Workouts Beginner</h2>
+    <h3>Bodyweight Squats</h3>
+    <p>3×15 reps (2 mins)</p>
+    <h3>Glute Bridges</h3>
+    <p>3×15 reps (3 mins)</p>
+    <h3>Lunges (stationary)</h3>
+    <p>3×10 reps/leg (3 mins)</p>
+    <h3>Step-Ups (with support)</h3>
+    <p>2×10 reps/leg (2 mins)</p>
+    <h3>Calf Raises</h3>
+    <p>3×20 reps (2 mins)</p>
+    <h3>Sumo Squats</h3>
+    <p>3×15 reps (3 mins)</p>
+    <h3>Seated Leg Press</h3>
+    <p>3×12 reps (3 mins)</p>
+    <h3>Walking Lunges</h3>
+    <p>3×10 reps/leg (3 mins)</p>
+    <h3>Leg Curls (machine)</h3>
+    <p>3×12 reps (3 mins)</p>
+    <h3>Side Leg Raises</h3>
+    <p>3×15 reps/side (2 mins)</p>
+  </article>
+
+  <article class="workout-card" data-category="legs" data-level="intermediate">
+    <h2>Legs Workouts Intermediate</h2>
+    <h3>Barbell Back Squats</h3>
+    <p>4×8 reps (4 mins)</p>
+    <h3>Romanian Deadlifts</h3>
+    <p>3×10 reps (3 mins)</p>
+    <h3>Walking Lunges</h3>
+    <p>3×12 reps/leg (3 mins)</p>
+    <h3>Bulgarian Split Squats</h3>
+    <p>3×8 reps/leg (3 mins)</p>
+    <h3>Seated Calf Raises</h3>
+    <p>3×20 reps (3 mins)</p>
+    <h3>Leg Press</h3>
+    <p>3×8 reps (3 mins)</p>
+    <h3>Leg Extensions</h3>
+    <p>3×12 reps (3 mins)</p>
+    <h3>Glute Kickbacks</h3>
+    <p>3×12 reps/leg (3 mins)</p>
+    <h3>Hack Squats</h3>
+    <p>3×8 reps (3 mins)</p>
+    <h3>Jump Squats</h3>
+    <p>3×15 reps (3 mins)</p>
+  </article>
+
+  <article class="workout-card" data-category="legs" data-level="advanced">
+    <h2>Legs Workouts Advanced</h2>
+    <h3>Front Squats</h3>
+    <p>5×5 reps (5 mins)</p>
+    <h3>Deadlifts</h3>
+    <p>4×6 reps (4 mins)</p>
+    <h3>Jump Squats (explosive)</h3>
+    <p>3×15 reps (3 mins)</p>
+  </article>
+
+  <!-- Arms Workouts -->
+  <article class="workout-card" data-category="arms" data-level="beginner">
+    <h2>Arms Workouts Beginner</h2>
+    <h3>Bicep Curls</h3>
+    <p>3×12 reps (2 mins)</p>
+    <h3>Tricep Dips (bench)</h3>
+    <p>3×10 reps (2 mins)</p>
+    <h3>Hammer Curls</h3>
+    <p>3×12 reps (2 mins)</p>
+    <h3>Overhead Tricep Extensions</h3>
+    <p>3×12 reps (2 mins)</p>
+    <h3>Wrist Curls</h3>
+    <p>3×15 reps (2 mins)</p>
+  </article>
+
+  <article class="workout-card" data-category="arms" data-level="intermediate">
+    <h2>Arms Workouts Intermediate</h2>
+    <h3>EZ Bar Curls</h3>
+    <p>4×10 reps (3 mins)</p>
+    <h3>Skull Crushers</h3>
+    <p>4×10 reps (3 mins)</p>
+    <h3>Preacher Curls</h3>
+    <p>3×12 reps (3 mins)</p>
+    <h3>Close-Grip Push-ups</h3>
+    <p>3×10 reps (2 mins)</p>
+    <h3>Concentration Curls</h3>
+    <p>3×12 reps (2 mins)</p>
+  </article>
+
+  <article class="workout-card" data-category="arms" data-level="advanced">
+    <h2>Arms Workouts Advanced</h2>
+    <h3>Barbell Curls</h3>
+    <p>5×6 reps (4 mins)</p>
+    <h3>Skull Crushers (EZ bar)</h3>
+    <p>4×8 reps (4 mins)</p>
+    <h3>Concentration Curls</h3>
+    <p>4×10 reps (3 mins)</p>
+    <h3>Dips (weighted)</h3>
+    <p>3×8 reps (3 mins)</p>
+  </article>
+
+  <!-- Core Workouts -->
+  <article class="workout-card" data-category="core" data-level="beginner">
+    <h2>Core Workouts Beginner</h2>
+    <h3>Planks</h3>
+    <p>3×30 seconds (2 mins)</p>
+    <h3>Curl-ups</h3>
+    <p>3×15 reps (2 mins)</p>
+    <h3>Leg Raises</h3>
+    <p>3×15 reps (2 mins)</p>
+    <h3>Bicycle Crunches</h3>
+    <p>3×20 reps (2 mins)</p>
+    <h3>Russian Twists</h3>
+    <p>3×20 reps (2 mins)</p>
+  </article>
+
+  <article class="workout-card" data-category="core" data-level="intermediate">
+    <h2>Core Workouts Intermediate</h2>
+    <h3>Hanging Leg Raises</h3>
+    <p>4×15 reps (3 mins)</p>
+    <h3>Mountain Climbers</h3>
+    <p>4×30 seconds (3 mins)</p>
+    <h3>Side Planks</h3>
+    <p>3×30 seconds/side (3 mins)</p>
+    <h3>V-Ups</h3>
+    <p>3×20 reps (2 mins)</p>
+    <h3>Russian Twists (weighted)</h3>
+    <p>3×30 reps (3 mins)</p>
+  </article>
+
+  <article class="workout-card" data-category="core" data-level="advanced">
+    <h2>Core Workouts Advanced</h2>
+    <h3>Dragon Flags</h3>
+    <p>4×8 reps (4 mins)</p>
+    <h3>Hanging Leg Raises (weighted)</h3>
+    <p>4×20 reps (3 mins)</p>
+    <h3>Ab Rollouts</h3>
+    <p>3×12 reps (3 mins)</p>
+    <h3>Side Plank with Hip Dips</h3>
+    <p>3×15 reps/side (3 mins)</p>
+    <h3>V-Ups with Twist</h3>
+    <p>4×20 reps (3 mins)</p>
+  </article>
+
+  <!-- Full Body Workouts -->
+  <article class="workout-card" data-category="fullbody" data-level="beginner">
+    <h2>Full Body Workouts Beginner</h2>
+    <h3>Jumping Jacks</h3>
+    <p>3×30 seconds (2 mins)</p>
+    <h3>Bodyweight Squats</h3>
+    <p>3×15 reps (2 mins)</p>
+    <h3>Push-ups</h3>
+    <p>3×10 reps (2 mins)</p>
+    <h3>Planks</h3>
+    <p>3×30 seconds (2 mins)</p>
+  </article>
+
+  <article class="workout-card" data-category="fullbody" data-level="intermediate">
+    <h2>Full Body Workouts Intermediate</h2>
+    <h3>Burpees</h3>
+    <p>4×12 reps (3 mins)</p>
+    <h3>Jump Lunges</h3>
+    <p>4×15 reps (3 mins)</p>
+    <h3>Push-up to Row</h3>
+    <p>3×12 reps (3 mins)</p>
+    <h3>Side Planks</h3>
+    <p>3×45 seconds/side (3 mins)</p>
+  </article>
+
+  <article class="workout-card" data-category="fullbody" data-level="advanced">
+    <h2>Full Body Workouts Advanced</h2>
+    <h3>Clean and Press</h3>
+    <p>4×6 reps (4 mins)</p>
+    <h3>Burpees with Pull-up</h3>
+    <p>4×10 reps (3 mins)</p>
+    <h3>Snatch</h3>
+    <p>3×8 reps (4 mins)</p>
+    <h3>Mountain Climbers</h3>
+    <p>4×45 seconds (3 mins)</p>
+  </article>
+  <!-- Back Workouts -->
+  <article class="workout-card" data-category="back" data-level="beginner">
+    <h2>Back Workouts Beginner</h2>
+    <h3>Superman</h3>
+    <p>3×15 reps (2 mins)</p>
+    <h3>Bird-Dog</h3>
+    <p>3×12 reps/side (2 mins)</p>
+    <h3>Reverse Flyes</h3>
+    <p>3×12 reps (2 mins)</p>
+    <h3>Superman with Arm and Leg Raise</h3>
+    <p>3×15 reps (2 mins)</p>
+  </article>
+
+  <article class="workout-card" data-category="back" data-level="intermediate">
+    <h2>Back Workouts Intermediate</h2>
+    <h3>Bent-over Rows</h3>
+    <p>4×8 reps (4 mins)</p>
+    <h3>Lat Pulldowns</h3>
+    <p>4×10 reps (3 mins)</p>
+    <h3>Seated Cable Rows</h3>
+    <p>4×10 reps (3 mins)</p>
+    <h3>Single-arm Dumbbell Rows</h3>
+    <p>4×8 reps/arm (3 mins)</p>
+  </article>
+
+  <article class="workout-card" data-category="back" data-level="advanced">
+    <h2>Back Workouts Advanced</h2>
+    <h3>Deadlifts</h3>
+    <p>4×6 reps (4 mins)</p>
+    <h3>Pull-ups (weighted)</h3>
+    <p>4×8 reps (3 mins)</p>
+    <h3>T-Bar Rows</h3>
+    <p>4×8 reps (3 mins)</p>
+    <h3>Single-arm Dumbbell Rows</h3>
+    <p>4×8 reps/arm (3 mins)</p>
+  </article>
+
+</section>
+</main>
+
+<script>
+  const categoryFilter = document.getElementById('categoryFilter');
+  const levelFilter = document.getElementById('levelFilter');
+  const workouts = document.querySelectorAll('.workout-card');
+
+  function filterWorkouts() {
+    const selectedCategory = categoryFilter.value;
+    const selectedLevel = levelFilter.value;
+
+    workouts.forEach(card => {
+      const category = card.getAttribute('data-category');
+      const level = card.getAttribute('data-level');
+
+      const matchCategory = selectedCategory === 'all' || category === selectedCategory;
+      const matchLevel = selectedLevel === 'all' || level === selectedLevel;
+
+      card.style.display = (matchCategory && matchLevel) ? 'block' : 'none';
+    });
+  }
+
+  categoryFilter.addEventListener('change', filterWorkouts);
+  levelFilter.addEventListener('change', filterWorkouts);
+</script>
+
+<footer class="footer">
+  <div class="footer-container">
+    <div class="footer-logo">
+      <h2>FIT <span>BLISS</span></h2>
+      <p>WORKOUT COMPLETE™</p>
+    </div>
+
+    <div class="footer-links">
+      <div class="footer-column">
+        <h4>WORKOUTS</h4>
+        <a href="#">Workout Videos</a>
+        <a href="#">Custom Workouts</a>
+        <h4>PROGRAMS</h4>
+        <a href="#">Workout Programs</a>
+        <a href="#">Meal Plans</a>
+        <a href="#">Pilot Programs</a>
+        <a href="#">Routines</a>
+      </div>
+
+      <div class="footer-column">
+        <h4>HEALTHY LIVING</h4>
+        <a href="#">Fitness</a>
+        <a href="#">Health</a>
+        <a href="#">Nutrition</a>
+        <a href="#">Healthy Recipes</a>
+        <a href="#">Experts</a>
+      </div>
+
+      <div class="footer-column">
+        <h4>ABOUT</h4>
+        <a href="#">Careers</a>
+        <a href="#">Tutorials</a>
+        <a href="#">Our Team</a>
+        <a href="#">B2B Options</a>
+      </div>
+
+      <div class="footer-column">
+        <h4>MEMBERSHIP</h4>
+        <a href="#">FB Plus</a>
+        <a href="#">Community</a>
+        <a href="#">Referral Program</a>
+        <a href="#">Blog</a>
+        <a href="#">Contact Us</a>
+        <a href="#">FAQ</a>
+        <a href="#">Store</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="footer-bottom">
+    <p>&copy; 2025 Fitness Blender. All rights reserved. <a href="#">Terms of Use</a> | <a href="#">Privacy Policy</a></p>
+    <div class="footer-socials">
+      <a href="#"><img src="youtube-icon.svg" alt="YouTube"></a>
+      <a href="#"><img src="pinterest-icon.svg" alt="Pinterest"></a>
+      <a href="#"><img src="facebook-icon.svg" alt="Facebook"></a>
+      <a href="#"><img src="instagram-icon.svg" alt="Instagram"></a>
+      <a href="#"><img src="twitter-icon.svg" alt="Twitter"></a>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>

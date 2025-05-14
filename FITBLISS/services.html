@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Fit Bliss</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins:wght@600&display=swap" rel="stylesheet">
+  
+
+</head>
+<body>
+  <header class="navbar">
+    <div class="logo">
+      <img src="images/logo.png" alt="Fit Bliss Logo">
+      <span class="logo-text">Fit <span class="logo-text-part">Bliss</span></span>
+    </div>
+    <nav class="nav-links" id="navLinks">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="services.html">Services</a>
+      <a href="workouts.html">Workouts</a>
+      <a href="nutrition.html">Nutrition</a>
+      <a href="faq.html">FAQ</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+    <div class="hamburger" id="hamburger">&#9776;</div>
+  </header>
+
+  <script>
+    const hamburger = document.getElementById('hamburger');
+const navLinks = document.getElementById('navLinks');
+
+hamburger.addEventListener('click', () => {
+  navLinks.classList.toggle('active');
+});
+
+  </script>
+
+<main class="services-page">
+
+  <h1 class="page-title">Our Services</h1>
+
+  <section class="service-card" id="yoga">
+    <div class="service-image">
+      <img src="images/yoga1.jpg" alt="Yoga class in session">
+    </div>
+    <div class="service-text">
+      <h2>Yoga</h2>
+      <p>Find your balance at FitBliss with our diverse yoga offerings. From gentle, restorative sessions to challenging power flows, our classes cater to all levels and goals. Our skilled instructors emphasize proper alignment and mindful movement to help you build strength, flexibility, and inner calm. Experience the perfect complement to high intensity training or discover yoga as your primary practice. Our peaceful studio space features natural light and soothing elements to create the ideal environment for your mind-body connection to flourish.</p>
+    </div>
+  </section>
+
+  <section class="service-card reverse" id="nutrition">
+    <div class="service-image">
+      <img src="images/nutri.jpg" alt="Healthy food and nutrition coaching">
+    </div>
+    <div class="service-text">
+      <h2>Nutrition</h2>
+      <p>Fuel your fitness journey with expert nutritional guidance from our registered dietitians. We believe that sustainable results come from a balanced approach to eating that supports your lifestyle and goals. Our nutrition services include personalized meal planning, grocery shopping tutorials, cooking demonstrations, and one on one counseling sessions. Learn how to make informed food choices that energize your workouts and optimize recovery. Transform your relationship with food and discover how proper nutrition can enhance every aspect of your wellbeing.</p>
+    </div>
+  </section>
+
+  <section class="service-card" id="classes">
+    <div class="service-image">
+      <img src="images/virt1.jpg" alt="Virtual class via laptop">
+    </div>
+    <div class="service-text">
+      <h2>Virtual Classes</h2>
+      <p>Experience the FitBliss difference from anywhere with our premium virtual classes. Our interactive online platform delivers the same expert instruction and community feel as our in person sessions. Choose from live streamed classes where instructors can provide real time feedback, or access our extensive on demand library for workouts that fit your schedule.</p>
+    </div>
+  </section>
+
+  <section class="service-card reverse" id="trainer">
+    <div class="service-image">
+      <img src="images/TS.jpg" alt="Personal trainer coaching client">
+    </div>
+    <div class="service-text">
+      <h2>Trainer Series</h2>
+      <p>Take your fitness to the next level with our specialized Trainer Series. These focused programs, led by our top trainers, delve deeper into specific training methodologies and techniques. Whether it's advanced lifting, functional movement, or sport specific conditioning, our Trainer Series offers in depth instruction and personalized attention to help you break through plateaus and achieve ambitious goals.</p>
+    </div>
+  </section>
+
+  <section class="service-card" id="strength">
+    <div class="service-image">
+      <img src="images/ST.jpg" alt="Strength training with dumbbells">
+    </div>
+    <div class="service-text">
+      <h2>Strength Training</h2>
+      <p>Build more than just muscle with our comprehensive strength training programs. Our approach focuses on functional strength that translates to everyday life, helping you move better, feel stronger, and prevent injuries. Using a combination of free weights, machines, and bodyweight exercises, our certified trainers will help you develop a balanced physique while improving bone density and metabolic health. Whether you're a beginner or advanced lifter, our personalized programs will help you achieve your strength goals safely and effectively.</p>
+    </div>
+  </section>
+
+  <section class="service-card reverse" id="HIIT">
+    <div class="service-image">
+      <img src="images/HIT.jpg" alt="People doing HIIT workouts">
+    </div>
+    <div class="service-text">
+      <h2>HIIT</h2>
+      <p>Ignite your metabolism and transform your body with our signature HIIT classes. These dynamic, fast paced workouts combine intense bursts of activity with short recovery periods to maximize calorie burn and improve cardiovascular endurance. Perfect for busy individuals looking for efficient, results driven training. Our expert instructors will guide you through various routines that keep your body guessing and your motivation high. Experience the afterburn effect that keeps your body burning calories long after your workout ends.</p>
+    </div>
+  </section>
+
+</main>
+
+<footer class="footer">
+  <div class="footer-container">
+    <div class="footer-logo">
+      <h2>FIT <span>BLISS</span></h2>
+      <p>WORKOUT COMPLETE™</p>
+    </div>
+
+    <div class="footer-links">
+      <div class="footer-column">
+        <h4>WORKOUTS</h4>
+        <a href="#">Workout Videos</a>
+        <a href="#">Custom Workouts</a>
+        <h4>PROGRAMS</h4>
+        <a href="#">Workout Programs</a>
+        <a href="#">Meal Plans</a>
+        <a href="#">Pilot Programs</a>
+        <a href="#">Routines</a>
+      </div>
+
+      <div class="footer-column">
+        <h4>HEALTHY LIVING</h4>
+        <a href="#">Fitness</a>
+        <a href="#">Health</a>
+        <a href="#">Nutrition</a>
+        <a href="#">Healthy Recipes</a>
+        <a href="#">Experts</a>
+      </div>
+
+      <div class="footer-column">
+        <h4>ABOUT</h4>
+        <a href="#">Careers</a>
+        <a href="#">Tutorials</a>
+        <a href="#">Our Team</a>
+        <a href="#">B2B Options</a>
+      </div>
+
+      <div class="footer-column">
+        <h4>MEMBERSHIP</h4>
+        <a href="#">FB Plus</a>
+        <a href="#">Community</a>
+        <a href="#">Referral Program</a>
+        <a href="#">Blog</a>
+        <a href="#">Contact Us</a>
+        <a href="#">FAQ</a>
+        <a href="#">Store</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="footer-bottom">
+    <p>&copy; 2025 Fitness Blender. All rights reserved. <a href="#">Terms of Use</a> | <a href="#">Privacy Policy</a></p>
+    <div class="footer-socials">
+      <a href="#"><img src="youtube-icon.svg" alt="YouTube"></a>
+      <a href="#"><img src="pinterest-icon.svg" alt="Pinterest"></a>
+      <a href="#"><img src="facebook-icon.svg" alt="Facebook"></a>
+      <a href="#"><img src="instagram-icon.svg" alt="Instagram"></a>
+      <a href="#"><img src="twitter-icon.svg" alt="Twitter"></a>
+    </div>
+  </div>
+</footer>
+</body>
+</html>
